@@ -72,7 +72,7 @@ export default function GetInvolvedPage() {
                   </div>
                 </CardHeader>
                 <CardContent>
-                  <Button asChild variant="outline" className="w-full">
+                  <Button asChild size="sm" className="rounded-full bg-foreground/10 text-foreground hover:bg-foreground/15 border-0">
                     <Link href="/contact">{opportunity.action}</Link>
                   </Button>
                 </CardContent>

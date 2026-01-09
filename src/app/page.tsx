@@ -169,29 +169,21 @@ export default function Home() {
         </SectionContent>
       </Section>
 
-      <Section className="relative py-32 lg:py-40 overflow-hidden">
-        <div className="absolute inset-0">
-          <img
-            src="https://images.pexels.com/photos/6646947/pexels-photo-6646947.jpeg?auto=compress&cs=tinysrgb&w=1920"
-            alt=""
-            className="img-cover object-center scale-105"
-          />
-          <div className="absolute inset-0 bg-gradient-to-br from-slate-900/90 via-slate-800/85 to-slate-900/90" />
-        </div>
-        <SectionContent className="relative z-10">
+      <Section className="bg-gradient-to-br from-orange-50 to-amber-50 py-32 lg:py-40">
+        <SectionContent>
           <div className="text-center max-w-3xl mx-auto space-y-8">
-            <h2 className="text-white drop-shadow-lg">Join Us in Making a Difference</h2>
-            <p className="text-xl lg:text-2xl text-white/95 leading-relaxed font-light">
+            <h2 className="text-balance">Join Us in Making a Difference</h2>
+            <p className="text-xl lg:text-2xl text-muted-foreground leading-relaxed">
               Whether through donations, volunteering, or partnerships, your support helps us create lasting change in communities across Kenya.
             </p>
             <div className="flex flex-wrap gap-4 justify-center pt-4">
-              <Button asChild size="lg" className="bg-primary text-white hover:bg-primary/90 shadow-xl">
+              <Button asChild size="lg" className="bg-primary text-white hover:bg-primary/90 px-8 py-6 text-base font-semibold rounded-lg shadow-sm hover:shadow-md transition-all">
                 <Link href="/donate">Donate Now</Link>
               </Button>
-              <Button asChild size="lg" variant="outline" className="border-2 border-white text-white hover:bg-white hover:text-slate-900 backdrop-blur-sm">
+              <Button asChild size="lg" variant="outline" className="border-2 border-primary/20 bg-white/50 hover:bg-white hover:border-primary text-foreground px-8 py-6 text-base font-semibold rounded-lg shadow-sm hover:shadow-md transition-all">
                 <Link href="/get-involved">Get Involved</Link>
               </Button>
-              <Button asChild size="lg" variant="outline" className="border-2 border-white text-white hover:bg-white hover:text-slate-900 backdrop-blur-sm">
+              <Button asChild size="lg" variant="outline" className="border-2 border-primary/20 bg-white/50 hover:bg-white hover:border-primary text-foreground px-8 py-6 text-base font-semibold rounded-lg shadow-sm hover:shadow-md transition-all">
                 <Link href="/contact">Partner with Us</Link>
               </Button>
             </div>
