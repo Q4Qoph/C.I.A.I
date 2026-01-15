@@ -7,48 +7,56 @@ import { Section, SectionContent, SectionHeader } from '@/components/section';
 import { ProgramCard } from '@/components/program-card';
 import { StatCard } from '@/components/stat-card';
 
+import Img0012 from '../../public/images/DSC_0012.webp';
+import Img0038 from '../../public/images/DSC_0038.webp';
+import Img0020 from '../../public/images/DSC_0020.webp';
+import Img0030 from '../../public/images/30.webp';
+import Img0016 from '../../public/images/DSC_0016.webp';
+import Img0047 from '../../public/images/DSC_0047.webp';
+import Img0008 from '../../public/images/DSC_0008.webp';
+
 const focusAreas = [
   {
     title: 'OVC & Human Rights',
     description: 'Supporting orphans, vulnerable children, and protecting land rights for widows and marginalized communities.',
     icon: Heart,
     href: '/programs/human-rights',
-    imageUrl: '/images/DSC_0012.webp',
+    imageUrl: Img0012,
   },
   {
     title: 'Conflict Resolution & Peacebuilding',
     description: 'Facilitating community dialogues, peace summits, and conflict resolution to build harmonious communities.',
     icon: Shield,
     href: '/programs/peacebuilding',
-    imageUrl: '/images/DSC_0038.webp',
+    imageUrl: Img0038,
   },
   {
     title: 'Economic Empowerment',
     description: 'Digital literacy, entrepreneurship training, and education subsidies to unlock economic opportunities.',
     icon: TrendingUp,
     href: '/programs/economic',
-    imageUrl: '/images/DSC_0020.webp',
+    imageUrl: Img0020,
   },
   {
     title: 'Climate Change',
     description: 'Environmental conservation through tree nurseries and community greening initiatives.',
     icon: Leaf,
     href: '/programs/climate',
-    imageUrl: '/images/30.webp',
+    imageUrl: Img0030,
   },
   {
     title: 'Health & SRHR',
     description: 'Comprehensive health programs including menstrual hygiene, mental health, and chronic disease management.',
     icon: Stethoscope,
     href: '/programs/health',
-    imageUrl: '/images/DSC_0040.webp',
+    imageUrl: Img0016,
   },
 ];
 
 export default function Home() {
   return (
     <>
-      <Hero imageUrl="/images/DSC_0003.webp">
+      <Hero imageUrl={Img0047.src}>
         <HeroContent className="text-white" variant="up">
           <div className="max-w-3xl space-y-8 relative">
             <div className="absolute inset-0 bg-black/30 rounded-2xl -z-10 blur-xl" />
@@ -93,7 +101,7 @@ export default function Home() {
             <div className="relative group order-2 lg:order-1">
               <div className="relative h-[400px] lg:h-[600px] overflow-hidden rounded-2xl lg:rounded-3xl">
                 <Image
-                  src="/images/DSC_0008.webp"
+                  src={Img0008}
                   alt="Active programs"
                   fill
                   className="img-cover transform group-hover:scale-110 transition-transform duration-700 object-cover"

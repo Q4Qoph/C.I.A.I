@@ -3,6 +3,7 @@
 import * as React from 'react';
 import Link from 'next/link';
 import Image from 'next/image';
+import Logo from '../../public/CIAI-Logo.png';
 import { usePathname } from 'next/navigation';
 import { Menu, X } from 'lucide-react';
 import { Button } from '@/components/ui/button';
@@ -48,7 +49,7 @@ export function Navigation() {
         <div className="flex lg:flex-1">
           <Link href="/" className="-m-1.5 p-1.5 group flex items-center">
             <Image
-              src="/CIAI-Logo.png"
+              src={Logo}
               alt="CIAI Logo"
               width={120}
               height={40}
@@ -109,7 +110,7 @@ export function Navigation() {
             <div className="flex items-center justify-between">
               <Link href="/" className="-m-1.5 p-1.5 flex items-center" onClick={() => setMobileMenuOpen(false)}>
                 <Image
-                  src="/CIAI-Logo.png"
+                  src={Logo}
                   alt="CIAI Logo"
                   width={120}
                   height={40}

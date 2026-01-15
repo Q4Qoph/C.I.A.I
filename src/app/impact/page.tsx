@@ -1,4 +1,7 @@
 import Image from 'next/image';
+import Img0034 from '../../../public/images/DSC_0034.webp';
+import Img0036 from '../../../public/images/DSC_0036.webp';
+import Img0037 from '../../../public/images/DSC_0037.webp';
 import { BarChart3, FileCheck, TrendingUp, Users, Target, Database } from 'lucide-react';
 import { Hero, HeroContent } from '@/components/hero';
 import { Section, SectionContent, SectionHeader } from '@/components/section';
@@ -45,7 +48,7 @@ export default function ImpactPage() {
             </div>
             <div className="relative h-[400px] lg:h-[500px] rounded-2xl overflow-hidden group order-1 lg:order-2">
               <Image
-                src="/images/DSC_0034.webp"
+                src={Img0034}
                 alt="Accountability"
                 fill
                 className="object-cover transform group-hover:scale-105 transition-transform duration-700"
@@ -103,7 +106,7 @@ export default function ImpactPage() {
           <div className="grid lg:grid-cols-2 gap-12 lg:gap-16 items-center mb-24">
             <div className="relative h-[400px] lg:h-[600px] rounded-2xl overflow-hidden group order-2 lg:order-1">
               <Image
-                src="/images/DSC_0036.webp"
+                src={Img0036}
                 alt="Transparency"
                 fill
                 className="object-cover transform group-hover:scale-105 transition-transform duration-700"
@@ -157,7 +160,7 @@ export default function ImpactPage() {
             </div>
             <div className="relative h-[400px] lg:h-[600px] rounded-2xl overflow-hidden group order-1 lg:order-2">
               <Image
-                src="/images/DSC_0037.webp"
+                src={Img0037}
                 alt="Financial accountability"
                 fill
                 className="object-cover transform group-hover:scale-105 transition-transform duration-700"

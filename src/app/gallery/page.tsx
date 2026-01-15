@@ -1,34 +1,32 @@
 import Image from 'next/image';
 import { Section, SectionContent, SectionHeader } from '@/components/section';
 
+import Img0003 from '../../../public/images/DSC_0003.webp';
+import Img0004 from '../../../public/images/DSC_0004.webp';
+import Img0006 from '../../../public/images/DSC_0006.webp';
+import Img0008 from '../../../public/images/DSC_0008.webp';
+import Img0009 from '../../../public/images/DSC_0009.webp';
+import Img0012 from '../../../public/images/DSC_0012.webp';
+import Img0013 from '../../../public/images/DSC_0013.webp';
+import Img0014 from '../../../public/images/DSC_0014.webp';
+import Img0016 from '../../../public/images/DSC_0016.webp';
+import Img0020 from '../../../public/images/DSC_0020.webp';
+import Img0022 from '../../../public/images/DSC_0022.webp';
+import Img0023 from '../../../public/images/DSC_0023.webp';
+
 const galleryImages = [
-  '/images/DSC_0003.webp',
-  '/images/DSC_0004.webp',
-  '/images/DSC_0006.webp',
-  '/images/DSC_0008.webp',
-  '/images/DSC_0009.webp',
-  '/images/DSC_0012.webp',
-  '/images/DSC_0013.webp',
-  '/images/DSC_0014.webp',
-  '/images/DSC_0016.webp',
-  '/images/DSC_0020.webp',
-  '/images/DSC_0022.webp',
-  '/images/DSC_0023.webp',
-  '/images/DSC_0024.webp',
-  '/images/DSC_0026.webp',
-  '/images/DSC_0028.webp',
-  '/images/DSC_0030.webp',
-  '/images/DSC_0031.webp',
-  '/images/DSC_0034.webp',
-  '/images/DSC_0036.webp',
-  '/images/DSC_0037.webp',
-  '/images/DSC_0038.webp',
-  '/images/DSC_0039.webp',
-  '/images/DSC_0040.webp',
-  '/images/DSC_0042.webp',
-  '/images/DSC_0043.webp',
-  '/images/DSC_0046.webp',
-  '/images/DSC_0047.webp',
+  Img0003,
+  Img0004,
+  Img0006,
+  Img0008,
+  Img0009,
+  Img0012,
+  Img0013,
+  Img0014,
+  Img0016,
+  Img0020,
+  Img0022,
+  Img0023,
 ];
 
 export default function GalleryPage() {
@@ -43,7 +41,7 @@ export default function GalleryPage() {
         <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4">
           {galleryImages.map((src, index) => (
             <div
-              key={src}
+              key={index}
               className="relative aspect-[4/3] overflow-hidden rounded-xl group bg-black/5"
             >
               <Image

@@ -1,5 +1,6 @@
 import Link from 'next/link';
 import Image from 'next/image';
+import Logo from '../../public/CIAI-Logo.png';
 import { Facebook, Twitter, Linkedin, Mail, MapPin, Phone } from 'lucide-react';
 
 const navigation = {
@@ -32,7 +33,7 @@ export function Footer() {
             <div>
               <Link href="/" className="inline-block">
                 <Image
-                  src="/CIAI-Logo.png"
+                  src={Logo}
                   alt="CIAI Logo"
                   width={140}
                   height={50}
