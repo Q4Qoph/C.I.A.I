@@ -13,42 +13,42 @@ const focusAreas = [
     description: 'Supporting orphans, vulnerable children, and protecting land rights for widows and marginalized communities.',
     icon: Heart,
     href: '/programs/human-rights',
-    imageUrl: '/images/DSC_0012.jpg',
+    imageUrl: '/images/DSC_0012.webp',
   },
   {
     title: 'Conflict Resolution & Peacebuilding',
     description: 'Facilitating community dialogues, peace summits, and conflict resolution to build harmonious communities.',
     icon: Shield,
     href: '/programs/peacebuilding',
-    imageUrl: '/images/DSC_0038.jpg',
+    imageUrl: '/images/DSC_0038.webp',
   },
   {
     title: 'Economic Empowerment',
     description: 'Digital literacy, entrepreneurship training, and education subsidies to unlock economic opportunities.',
     icon: TrendingUp,
     href: '/programs/economic',
-    imageUrl: '/images/DSC_0020.jpg',
+    imageUrl: '/images/DSC_0020.webp',
   },
   {
     title: 'Climate Change',
     description: 'Environmental conservation through tree nurseries and community greening initiatives.',
     icon: Leaf,
     href: '/programs/climate',
-    imageUrl: '/images/30.jpg',
+    imageUrl: '/images/30.webp',
   },
   {
     title: 'Health & SRHR',
     description: 'Comprehensive health programs including menstrual hygiene, mental health, and chronic disease management.',
     icon: Stethoscope,
     href: '/programs/health',
-    imageUrl: '/images/DSC_0040.jpg',
+    imageUrl: '/images/DSC_0040.webp',
   },
 ];
 
 export default function Home() {
   return (
     <>
-      <Hero imageUrl="/images/DSC_0003.jpg">
+      <Hero imageUrl="/images/DSC_0003.webp">
         <HeroContent className="text-white">
           <div className="max-w-3xl space-y-8 relative">
             <div className="absolute inset-0 bg-black/30 rounded-2xl -z-10 blur-xl" />
@@ -93,7 +93,7 @@ export default function Home() {
             <div className="relative group order-2 lg:order-1">
               <div className="relative h-[400px] lg:h-[600px] overflow-hidden rounded-2xl lg:rounded-3xl">
                 <Image
-                  src="/images/DSC_0008.jpg"
+                  src="/images/DSC_0008.webp"
                   alt="Active programs"
                   fill
                   className="img-cover transform group-hover:scale-110 transition-transform duration-700 object-cover"

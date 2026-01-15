@@ -43,7 +43,7 @@ export default function DonatePage() {
             </div>
             <div className="relative h-[400px] lg:h-[500px] rounded-2xl overflow-hidden order-1 lg:order-2 group">
               <Image
-                src="/images/DSC_0014.jpg"
+                src="/images/DSC_0014.webp"
                 alt="Impact"
                 fill
                 className="object-cover transform group-hover:scale-105 transition-transform duration-700"

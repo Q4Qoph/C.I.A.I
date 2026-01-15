@@ -11,35 +11,35 @@ const programs = [
     description: 'Protecting the rights of orphans, vulnerable children, and widows through land rights campaigns, legal support, and house renovation programs.',
     icon: Heart,
     href: '/programs/human-rights',
-    imageUrl: '/images/DSC_0020.jpg',
+    imageUrl: '/images/DSC_0020.webp',
   },
   {
     title: 'Conflict Resolution & Peacebuilding',
     description: 'Building peaceful communities through dialogue, peace summits, and conflict mediation with stakeholders across affected areas.',
     icon: Shield,
     href: '/programs/peacebuilding',
-    imageUrl: '/images/DSC_0038.jpg',
+    imageUrl: '/images/DSC_0038.webp',
   },
   {
     title: 'Economic Empowerment',
     description: 'Creating opportunities through digital literacy, entrepreneurship training, business development, and education subsidies for vulnerable youth.',
     icon: TrendingUp,
     href: '/programs/economic',
-    imageUrl: '/images/DSC_0028.jpg',
+    imageUrl: '/images/DSC_0028.webp',
   },
   {
     title: 'Climate Change',
     description: 'Environmental conservation and climate adaptation through tree nurseries, community greening, and environmental beautification projects.',
     icon: Leaf,
     href: '/programs/climate',
-    imageUrl: '/images/30.jpg',
+    imageUrl: '/images/30.webp',
   },
   {
     title: 'Health & SRHR',
     description: 'Comprehensive health programs including menstrual hygiene, mental health support, and chronic disease management in partnership with health authorities.',
     icon: Stethoscope,
     href: '/programs/health',
-    imageUrl: '/images/DSC_0040.jpg',
+    imageUrl: '/images/DSC_0040.webp',
   },
 ];
 
@@ -81,7 +81,7 @@ export default function ProgramsPage() {
           <div className="grid lg:grid-cols-2 gap-12 lg:gap-16 items-center">
             <div className="relative h-[400px] lg:h-[600px] rounded-2xl overflow-hidden group order-2 lg:order-1">
               <Image
-                src="/images/DSC_0042.jpg"
+                src="/images/DSC_0042.webp"
                 alt="Our approach"
                 fill
                 className="object-cover transform group-hover:scale-105 transition-transform duration-700"

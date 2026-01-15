@@ -70,7 +70,7 @@ export default function AboutPage() {
             </div>
             <div className="relative h-[400px] lg:h-[600px] rounded-2xl overflow-hidden group order-1 lg:order-2">
               <Image
-                src="/images/DSC_0004.jpg"
+                src="/images/DSC_0004.webp"
                 alt="Community work"
                 fill
                 className="object-cover transform group-hover:scale-105 transition-transform duration-700"
@@ -87,7 +87,7 @@ export default function AboutPage() {
           <div className="grid lg:grid-cols-2 gap-12 lg:gap-16 items-center">
             <div className="relative h-[400px] lg:h-[600px] rounded-2xl overflow-hidden group order-2 lg:order-1">
               <Image
-                src="/images/DSC_0006.jpg"
+                src="/images/DSC_0006.webp"
                 alt="Mission and vision"
                 fill
                 className="object-cover transform group-hover:scale-105 transition-transform duration-700"
@@ -169,7 +169,7 @@ export default function AboutPage() {
             </div>
             <div className="relative h-[400px] lg:h-[600px] rounded-2xl overflow-hidden group order-1 lg:order-2">
               <Image
-                src="/images/DSC_0013.jpg"
+                src="/images/DSC_0013.webp"
                 alt="Communities we serve"
                 fill
                 className="object-cover transform group-hover:scale-105 transition-transform duration-700"

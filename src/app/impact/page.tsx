@@ -45,7 +45,7 @@ export default function ImpactPage() {
             </div>
             <div className="relative h-[400px] lg:h-[500px] rounded-2xl overflow-hidden group order-1 lg:order-2">
               <Image
-                src="/images/DSC_0034.jpg"
+                src="/images/DSC_0034.webp"
                 alt="Accountability"
                 fill
                 className="object-cover transform group-hover:scale-105 transition-transform duration-700"
@@ -103,7 +103,7 @@ export default function ImpactPage() {
           <div className="grid lg:grid-cols-2 gap-12 lg:gap-16 items-center mb-24">
             <div className="relative h-[400px] lg:h-[600px] rounded-2xl overflow-hidden group order-2 lg:order-1">
               <Image
-                src="/images/DSC_0036.jpg"
+                src="/images/DSC_0036.webp"
                 alt="Transparency"
                 fill
                 className="object-cover transform group-hover:scale-105 transition-transform duration-700"
@@ -157,7 +157,7 @@ export default function ImpactPage() {
             </div>
             <div className="relative h-[400px] lg:h-[600px] rounded-2xl overflow-hidden group order-1 lg:order-2">
               <Image
-                src="/images/DSC_0037.jpg"
+                src="/images/DSC_0037.webp"
                 alt="Financial accountability"
                 fill
                 className="object-cover transform group-hover:scale-105 transition-transform duration-700"
