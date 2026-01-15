@@ -1,4 +1,5 @@
 import Link from 'next/link';
+import Image from 'next/image';
 import { Heart, Users, Shield, Leaf, Stethoscope, ArrowRight, Target, TrendingUp, HandshakeIcon } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import { Hero, HeroContent } from '@/components/hero';
@@ -12,42 +13,42 @@ const focusAreas = [
     description: 'Supporting orphans, vulnerable children, and protecting land rights for widows and marginalized communities.',
     icon: Heart,
     href: '/programs/human-rights',
-    imageUrl: 'https://images.pexels.com/photos/8363028/pexels-photo-8363028.jpeg?auto=compress&cs=tinysrgb&w=800',
+    imageUrl: '/images/DSC_0012.jpg',
   },
   {
     title: 'Conflict Resolution & Peacebuilding',
     description: 'Facilitating community dialogues, peace summits, and conflict resolution to build harmonious communities.',
     icon: Shield,
     href: '/programs/peacebuilding',
-    imageUrl: 'https://images.pexels.com/photos/3184423/pexels-photo-3184423.jpeg?auto=compress&cs=tinysrgb&w=800',
+    imageUrl: '/images/DSC_0038.jpg',
   },
   {
     title: 'Economic Empowerment',
     description: 'Digital literacy, entrepreneurship training, and education subsidies to unlock economic opportunities.',
     icon: TrendingUp,
     href: '/programs/economic',
-    imageUrl: 'https://images.pexels.com/photos/5905857/pexels-photo-5905857.jpeg?auto=compress&cs=tinysrgb&w=800',
+    imageUrl: '/images/DSC_0020.jpg',
   },
   {
     title: 'Climate Change',
     description: 'Environmental conservation through tree nurseries and community greening initiatives.',
     icon: Leaf,
     href: '/programs/climate',
-    imageUrl: 'https://images.pexels.com/photos/1072179/pexels-photo-1072179.jpeg?auto=compress&cs=tinysrgb&w=800',
+    imageUrl: '/images/30.jpg',
   },
   {
     title: 'Health & SRHR',
     description: 'Comprehensive health programs including menstrual hygiene, mental health, and chronic disease management.',
     icon: Stethoscope,
     href: '/programs/health',
-    imageUrl: 'https://images.pexels.com/photos/7659564/pexels-photo-7659564.jpeg?auto=compress&cs=tinysrgb&w=800',
+    imageUrl: '/images/DSC_0040.jpg',
   },
 ];
 
 export default function Home() {
   return (
     <>
-      <Hero imageUrl="https://images.pexels.com/photos/6647024/pexels-photo-6647024.jpeg?auto=compress&cs=tinysrgb&w=1920">
+      <Hero imageUrl="/images/DSC_0003.jpg">
         <HeroContent className="text-white">
           <div className="max-w-3xl space-y-8 relative">
             <div className="absolute inset-0 bg-black/30 rounded-2xl -z-10 blur-xl" />
@@ -91,10 +92,12 @@ export default function Home() {
           <div className="grid lg:grid-cols-2 gap-12 lg:gap-16 items-center">
             <div className="relative group order-2 lg:order-1">
               <div className="relative h-[400px] lg:h-[600px] overflow-hidden rounded-2xl lg:rounded-3xl">
-                <img
-                  src="https://images.pexels.com/photos/6647024/pexels-photo-6647024.jpeg?auto=compress&cs=tinysrgb&w=1200"
+                <Image
+                  src="/images/DSC_0008.jpg"
                   alt="Active programs"
-                  className="img-cover transform group-hover:scale-110 transition-transform duration-700"
+                  fill
+                  className="img-cover transform group-hover:scale-110 transition-transform duration-700 object-cover"
+                  sizes="(min-width: 1024px) 50vw, 100vw"
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-primary/50 via-primary/20 to-transparent" />
               </div>
@@ -126,6 +129,36 @@ export default function Home() {
                     <ArrowRight className="ml-2 h-4 w-4" />
                   </Link>
                 </Button>
+              </div>
+            </div>
+          </div>
+        </SectionContent>
+      </Section>
+
+      <Section className="bg-white py-24 lg:py-32">
+        <SectionContent>
+          <div className="grid lg:grid-cols-2 gap-12 lg:gap-16 items-center">
+            <div className="order-2 lg:order-1">
+              <p className="text-primary font-semibold text-sm uppercase tracking-wide mb-4">In Their Own Words</p>
+              <h2 className="mb-6">CIAI in Action</h2>
+              <p className="text-lg text-muted-foreground leading-relaxed mb-4">
+                Watch a short highlight from our work on the ground, featuring community members and partners who are
+                building a more just and resilient future.
+              </p>
+              <p className="text-sm text-muted-foreground">
+                This video captures real moments from CIAI&apos;s programs and community engagement.
+              </p>
+            </div>
+            <div className="order-1 lg:order-2">
+              <div className="aspect-video rounded-2xl overflow-hidden shadow-xl border bg-black">
+                <iframe
+                  className="w-full h-full"
+                  src="https://www.youtube.com/embed/LCgPLkFd_xk"
+                  title="CIAI Highlight Video"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                  referrerPolicy="strict-origin-when-cross-origin"
+                  allowFullScreen
+                />
               </div>
             </div>
           </div>

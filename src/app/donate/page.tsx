@@ -1,3 +1,4 @@
+import Image from 'next/image';
 import { DollarSign, Shield, Target, TrendingUp } from 'lucide-react';
 import { Hero, HeroContent } from '@/components/hero';
 import { Section, SectionContent, SectionHeader } from '@/components/section';
@@ -41,10 +42,12 @@ export default function DonatePage() {
               </p>
             </div>
             <div className="relative h-[400px] lg:h-[500px] rounded-2xl overflow-hidden order-1 lg:order-2 group">
-              <img
-                src="https://images.pexels.com/photos/6646918/pexels-photo-6646918.jpeg?auto=compress&cs=tinysrgb&w=1200"
+              <Image
+                src="/images/DSC_0014.jpg"
                 alt="Impact"
-                className="img-cover transform group-hover:scale-105 transition-transform duration-700"
+                fill
+                className="object-cover transform group-hover:scale-105 transition-transform duration-700"
+                sizes="(min-width: 1024px) 50vw, 100vw"
               />
               <div className="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent" />
             </div>
@@ -107,8 +110,8 @@ export default function DonatePage() {
                   Make a direct bank transfer to CIAI. Contact us for banking details and reference information.
                 </p>
                 <div className="bg-muted p-4 rounded-lg">
-                  <p className="text-sm font-mono">Email: info@ciai.org</p>
-                  <p className="text-sm font-mono">Phone: +254 XXX XXX XXX</p>
+                  <p className="text-sm font-mono">Email: info@communityinactioninstitute.org</p>
+                  <p className="text-sm font-mono">Phone: +254 714 666 111</p>
                 </div>
               </CardContent>
             </Card>

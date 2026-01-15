@@ -51,7 +51,7 @@ export default function ContactPage() {
                   <div>
                     <CardTitle className="text-base mb-2">Phone</CardTitle>
                     <p className="text-sm text-muted-foreground">
-                      +254 XXX XXX XXX
+                      +254 714 666 111
                     </p>
                   </div>
                 </div>
@@ -65,7 +65,7 @@ export default function ContactPage() {
                   <div>
                     <CardTitle className="text-base mb-2">Email</CardTitle>
                     <p className="text-sm text-muted-foreground">
-                      info@ciai.org
+                      info@communityinactioninstitute.org
                     </p>
                   </div>
                 </div>

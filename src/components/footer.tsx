@@ -103,15 +103,15 @@ export function Footer() {
                 <ul role="list" className="mt-6 space-y-4">
                   <li className="flex items-start gap-2">
                     <MapPin className="h-4 w-4 mt-1 text-muted-foreground flex-shrink-0" />
-                    <span className="text-sm text-muted-foreground">Nyakach Sub County, Kisumu, Kenya</span>
+                    <span className="text-sm text-muted-foreground">Nairobi, Kenya</span>
                   </li>
                   <li className="flex items-center gap-2">
                     <Phone className="h-4 w-4 text-muted-foreground" />
-                    <span className="text-sm text-muted-foreground">+254 XXX XXX XXX</span>
+                    <span className="text-sm text-muted-foreground">+254 714 666 111</span>
                   </li>
                   <li className="flex items-center gap-2">
                     <Mail className="h-4 w-4 text-muted-foreground" />
-                    <span className="text-sm text-muted-foreground">info@ciai.org</span>
+                    <span className="text-sm text-muted-foreground">info@communityinactioninstitute.org</span>
                   </li>
                 </ul>
               </div>

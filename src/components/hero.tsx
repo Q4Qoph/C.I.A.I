@@ -1,4 +1,5 @@
 import { ReactNode } from 'react';
+import Image from 'next/image';
 import { cn } from '@/lib/utils';
 
 interface HeroProps {
@@ -13,10 +14,13 @@ export function Hero({ children, className, imageUrl }: HeroProps) {
     return (
       <div className={cn('relative min-h-screen flex items-center overflow-hidden', className)}>
         <div className="absolute inset-0">
-          <img
+          <Image
             src={imageUrl}
             alt=""
-            className="img-cover object-center scale-105"
+            fill
+            priority
+            className="object-cover object-center scale-105"
+            sizes="100vw"
           />
           <div className="absolute inset-0 bg-gradient-to-r from-black/95 via-black/90 to-black/80" />
         </div>
