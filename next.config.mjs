@@ -3,7 +3,9 @@ const nextConfig = {
   typescript: {
     ignoreBuildErrors: true,
   },
-  images: { unoptimized: true },
-};
+  images: {
+    unoptimized: true,
+  },
+}
 
-module.exports = nextConfig;
+export default nextConfig  // Change to ES6 export
