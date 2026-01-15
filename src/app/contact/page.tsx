@@ -7,7 +7,7 @@ export default function ContactPage() {
   return (
     <>
       <Hero>
-        <HeroContent>
+        <HeroContent variant="up">
           <div className="grid lg:grid-cols-2 gap-12 lg:gap-16">
             <div className="flex flex-col">
               <h1 className="text-balance leading-tight">Contact<br />Us</h1>
@@ -21,7 +21,7 @@ export default function ContactPage() {
         </HeroContent>
       </Hero>
 
-      <Section className="py-24 lg:py-32">
+      <Section className="py-24 lg:py-32" animate="up">
         <SectionContent>
           <SectionHeader
             subtitle="Get In Touch"
@@ -51,7 +51,7 @@ export default function ContactPage() {
                   <div>
                     <CardTitle className="text-base mb-2">Phone</CardTitle>
                     <p className="text-sm text-muted-foreground">
-                      +254 XXX XXX XXX
+                      +254 714 666 111
                     </p>
                   </div>
                 </div>
@@ -65,7 +65,7 @@ export default function ContactPage() {
                   <div>
                     <CardTitle className="text-base mb-2">Email</CardTitle>
                     <p className="text-sm text-muted-foreground">
-                      info@ciai.org
+                      info@communityinactioninstitute.org
                     </p>
                   </div>
                 </div>
@@ -129,7 +129,7 @@ export default function ContactPage() {
         </SectionContent>
       </Section>
 
-      <Section className="bg-gradient-to-br from-slate-50 to-slate-100 dark:from-slate-900 dark:to-slate-800 py-24 lg:py-32">
+      <Section className="bg-gradient-to-br from-slate-50 to-slate-100 dark:from-slate-900 dark:to-slate-800 py-24 lg:py-32" animate="right">
         <SectionContent>
           <div className="max-w-2xl mx-auto text-center">
             <h2 className="mb-4">We Value Your Inquiry</h2>

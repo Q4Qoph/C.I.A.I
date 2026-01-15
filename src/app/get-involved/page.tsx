@@ -1,3 +1,4 @@
+import Image from 'next/image';
 import { Users, Handshake, Heart, Building } from 'lucide-react';
 import { Hero, HeroContent } from '@/components/hero';
 import { Section, SectionContent, SectionHeader } from '@/components/section';
@@ -36,7 +37,7 @@ export default function GetInvolvedPage() {
   return (
     <>
       <Hero>
-        <HeroContent>
+        <HeroContent variant="up">
           <div className="grid lg:grid-cols-2 gap-12 lg:gap-16">
             <div className="flex flex-col">
               <h1 className="text-balance leading-tight">Get<br />Involved</h1>
@@ -50,7 +51,7 @@ export default function GetInvolvedPage() {
         </HeroContent>
       </Hero>
 
-      <Section className="py-24 lg:py-32">
+      <Section className="py-24 lg:py-32" animate="up">
         <SectionContent>
           <SectionHeader
             subtitle="Join Us"
@@ -72,7 +73,7 @@ export default function GetInvolvedPage() {
                   </div>
                 </CardHeader>
                 <CardContent>
-                  <Button asChild variant="outline" className="w-full">
+                  <Button asChild size="sm" className="rounded-full bg-foreground/10 text-foreground hover:bg-foreground/15 border-0">
                     <Link href="/contact">{opportunity.action}</Link>
                   </Button>
                 </CardContent>
@@ -82,14 +83,16 @@ export default function GetInvolvedPage() {
         </SectionContent>
       </Section>
 
-      <Section className="bg-muted py-24 lg:py-32">
+      <Section className="bg-muted py-24 lg:py-32" animate="left">
         <SectionContent>
           <div className="grid lg:grid-cols-2 gap-12 lg:gap-16 items-center">
             <div className="relative h-[400px] lg:h-[600px] rounded-2xl overflow-hidden group order-2 lg:order-1">
-              <img
-                src="https://images.pexels.com/photos/5905857/pexels-photo-5905857.jpeg?auto=compress&cs=tinysrgb&w=1200"
+              <Image
+                src="/images/DSC_0028.webp"
                 alt="Youth engagement"
-                className="img-cover transform group-hover:scale-105 transition-transform duration-700"
+                fill
+                className="object-cover transform group-hover:scale-105 transition-transform duration-700"
+                sizes="(min-width: 1024px) 50vw, 100vw"
               />
               <div className="absolute inset-0 bg-gradient-to-br from-primary/20 to-transparent" />
             </div>
@@ -104,7 +107,7 @@ export default function GetInvolvedPage() {
         </SectionContent>
       </Section>
 
-      <Section className="py-24 lg:py-32">
+      <Section className="py-24 lg:py-32" animate="right">
         <SectionContent>
           <div className="grid lg:grid-cols-2 gap-12 lg:gap-16 items-center">
             <div className="order-2 lg:order-1">
@@ -118,10 +121,12 @@ export default function GetInvolvedPage() {
               </Button>
             </div>
             <div className="relative h-[400px] lg:h-[600px] rounded-2xl overflow-hidden group order-1 lg:order-2">
-              <img
-                src="https://images.pexels.com/photos/3184423/pexels-photo-3184423.jpeg?auto=compress&cs=tinysrgb&w=1200"
+              <Image
+                src="/images/DSC_0031.webp"
                 alt="Partnerships"
-                className="img-cover transform group-hover:scale-105 transition-transform duration-700"
+                fill
+                className="object-cover transform group-hover:scale-105 transition-transform duration-700"
+                sizes="(min-width: 1024px) 50vw, 100vw"
               />
               <div className="absolute inset-0 bg-gradient-to-t from-black/30 to-transparent" />
             </div>
@@ -129,7 +134,7 @@ export default function GetInvolvedPage() {
         </SectionContent>
       </Section>
 
-      <Section className="bg-gradient-to-br from-slate-50 to-slate-100 dark:from-slate-900 dark:to-slate-800 py-24 lg:py-32">
+      <Section className="bg-gradient-to-br from-slate-50 to-slate-100 dark:from-slate-900 dark:to-slate-800 py-24 lg:py-32" animate="up">
         <SectionContent>
           <div className="max-w-2xl mx-auto text-center">
             <h2 className="mb-6">Your Support Changes Lives</h2>

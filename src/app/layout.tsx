@@ -7,6 +7,7 @@ import { Navigation } from '@/components/navigation';
 import { Footer } from '@/components/footer';
 
 export const metadata: Metadata = {
+  metadataBase: new URL(process.env.NEXT_PUBLIC_SITE_URL || 'http://localhost:3000'),
   title: 'Community In Action Institute | Empowering Communities in Kenya',
   description: 'Community In Action Institute is a community development and public health NGO focused on health, education, disaster management, food security, and community empowerment in Kenya.',
   keywords: ['NGO', 'Kenya', 'Community Development', 'Public Health', 'Education', 'Human Rights', 'Peacebuilding', 'Climate Change', 'Economic Empowerment'],

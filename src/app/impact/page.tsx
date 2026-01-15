@@ -1,3 +1,4 @@
+import Image from 'next/image';
 import { BarChart3, FileCheck, TrendingUp, Users, Target, Database } from 'lucide-react';
 import { Hero, HeroContent } from '@/components/hero';
 import { Section, SectionContent, SectionHeader } from '@/components/section';
@@ -18,7 +19,7 @@ export default function ImpactPage() {
   return (
     <>
       <Hero>
-        <HeroContent>
+        <HeroContent variant="up">
           <div className="grid lg:grid-cols-2 gap-12 lg:gap-16">
             <div className="flex flex-col">
               <h1 className="text-balance leading-tight">Impact &<br />Accountability</h1>
@@ -32,7 +33,7 @@ export default function ImpactPage() {
         </HeroContent>
       </Hero>
 
-      <Section className="py-24 lg:py-32">
+      <Section className="py-24 lg:py-32" animate="left">
         <SectionContent>
           <div className="grid lg:grid-cols-2 gap-12 lg:gap-16 items-center">
             <div className="order-2 lg:order-1">
@@ -43,10 +44,12 @@ export default function ImpactPage() {
               </p>
             </div>
             <div className="relative h-[400px] lg:h-[500px] rounded-2xl overflow-hidden group order-1 lg:order-2">
-              <img
-                src="https://images.pexels.com/photos/6646914/pexels-photo-6646914.jpeg?auto=compress&cs=tinysrgb&w=1200"
+              <Image
+                src="/images/DSC_0034.webp"
                 alt="Accountability"
-                className="img-cover transform group-hover:scale-105 transition-transform duration-700"
+                fill
+                className="object-cover transform group-hover:scale-105 transition-transform duration-700"
+                sizes="(min-width: 1024px) 50vw, 100vw"
               />
               <div className="absolute inset-0 bg-gradient-to-t from-black/30 to-transparent" />
             </div>
@@ -71,7 +74,7 @@ export default function ImpactPage() {
         </SectionContent>
       </Section>
 
-      <Section className="bg-muted py-24 lg:py-32">
+      <Section className="bg-muted py-24 lg:py-32" animate="up">
         <SectionContent>
           <SectionHeader
             subtitle="Key Indicators"
@@ -95,14 +98,16 @@ export default function ImpactPage() {
         </SectionContent>
       </Section>
 
-      <Section className="py-24 lg:py-32">
+      <Section className="py-24 lg:py-32" animate="right">
         <SectionContent>
           <div className="grid lg:grid-cols-2 gap-12 lg:gap-16 items-center mb-24">
             <div className="relative h-[400px] lg:h-[600px] rounded-2xl overflow-hidden group order-2 lg:order-1">
-              <img
-                src="https://images.pexels.com/photos/6647024/pexels-photo-6647024.jpeg?auto=compress&cs=tinysrgb&w=1200"
+              <Image
+                src="/images/DSC_0036.webp"
                 alt="Transparency"
-                className="img-cover transform group-hover:scale-105 transition-transform duration-700"
+                fill
+                className="object-cover transform group-hover:scale-105 transition-transform duration-700"
+                sizes="(min-width: 1024px) 50vw, 100vw"
               />
               <div className="absolute inset-0 bg-gradient-to-br from-primary/20 to-transparent" />
             </div>
@@ -151,10 +156,12 @@ export default function ImpactPage() {
               </div>
             </div>
             <div className="relative h-[400px] lg:h-[600px] rounded-2xl overflow-hidden group order-1 lg:order-2">
-              <img
-                src="https://images.pexels.com/photos/6646939/pexels-photo-6646939.jpeg?auto=compress&cs=tinysrgb&w=1200"
+              <Image
+                src="/images/DSC_0037.webp"
                 alt="Financial accountability"
-                className="img-cover transform group-hover:scale-105 transition-transform duration-700"
+                fill
+                className="object-cover transform group-hover:scale-105 transition-transform duration-700"
+                sizes="(min-width: 1024px) 50vw, 100vw"
               />
               <div className="absolute inset-0 bg-gradient-to-t from-black/30 to-transparent" />
             </div>
@@ -162,7 +169,7 @@ export default function ImpactPage() {
         </SectionContent>
       </Section>
 
-      <Section className="bg-gradient-to-br from-slate-50 to-slate-100 dark:from-slate-900 dark:to-slate-800 py-24 lg:py-32">
+      <Section className="bg-gradient-to-br from-slate-50 to-slate-100 dark:from-slate-900 dark:to-slate-800 py-24 lg:py-32" animate="up">
         <SectionContent>
           <div className="max-w-2xl mx-auto text-center">
             <BarChart3 className="h-12 w-12 mx-auto mb-6 text-primary" />

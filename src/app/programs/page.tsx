@@ -1,4 +1,5 @@
 import Link from 'next/link';
+import Image from 'next/image';
 import { Heart, Shield, TrendingUp, Leaf, Stethoscope } from 'lucide-react';
 import { Hero, HeroContent } from '@/components/hero';
 import { Section, SectionContent, SectionHeader } from '@/components/section';
@@ -10,35 +11,35 @@ const programs = [
     description: 'Protecting the rights of orphans, vulnerable children, and widows through land rights campaigns, legal support, and house renovation programs.',
     icon: Heart,
     href: '/programs/human-rights',
-    imageUrl: 'https://images.pexels.com/photos/8363028/pexels-photo-8363028.jpeg?auto=compress&cs=tinysrgb&w=800',
+    imageUrl: '/images/DSC_0020.webp',
   },
   {
     title: 'Conflict Resolution & Peacebuilding',
     description: 'Building peaceful communities through dialogue, peace summits, and conflict mediation with stakeholders across affected areas.',
     icon: Shield,
     href: '/programs/peacebuilding',
-    imageUrl: 'https://images.pexels.com/photos/3184423/pexels-photo-3184423.jpeg?auto=compress&cs=tinysrgb&w=800',
+    imageUrl: '/images/DSC_0038.webp',
   },
   {
     title: 'Economic Empowerment',
     description: 'Creating opportunities through digital literacy, entrepreneurship training, business development, and education subsidies for vulnerable youth.',
     icon: TrendingUp,
     href: '/programs/economic',
-    imageUrl: 'https://images.pexels.com/photos/5905857/pexels-photo-5905857.jpeg?auto=compress&cs=tinysrgb&w=800',
+    imageUrl: '/images/DSC_0028.webp',
   },
   {
     title: 'Climate Change',
     description: 'Environmental conservation and climate adaptation through tree nurseries, community greening, and environmental beautification projects.',
     icon: Leaf,
     href: '/programs/climate',
-    imageUrl: 'https://images.pexels.com/photos/1072179/pexels-photo-1072179.jpeg?auto=compress&cs=tinysrgb&w=800',
+    imageUrl: '/images/30.webp',
   },
   {
     title: 'Health & SRHR',
     description: 'Comprehensive health programs including menstrual hygiene, mental health support, and chronic disease management in partnership with health authorities.',
     icon: Stethoscope,
     href: '/programs/health',
-    imageUrl: 'https://images.pexels.com/photos/7659564/pexels-photo-7659564.jpeg?auto=compress&cs=tinysrgb&w=800',
+    imageUrl: '/images/DSC_0040.webp',
   },
 ];
 
@@ -46,7 +47,7 @@ export default function ProgramsPage() {
   return (
     <>
       <Hero>
-        <HeroContent>
+        <HeroContent variant="up">
           <div className="grid lg:grid-cols-2 gap-12 lg:gap-16">
             <div className="flex flex-col">
               <h1 className="text-balance leading-tight">Our<br />Programs</h1>
@@ -60,7 +61,7 @@ export default function ProgramsPage() {
         </HeroContent>
       </Hero>
 
-      <Section className="py-24 lg:py-32">
+      <Section className="py-24 lg:py-32" animate="up">
         <SectionContent>
           <SectionHeader
             subtitle="Thematic Areas"
@@ -75,14 +76,16 @@ export default function ProgramsPage() {
         </SectionContent>
       </Section>
 
-      <Section className="bg-muted py-24 lg:py-32">
+      <Section className="bg-muted py-24 lg:py-32" animate="left">
         <SectionContent>
           <div className="grid lg:grid-cols-2 gap-12 lg:gap-16 items-center">
             <div className="relative h-[400px] lg:h-[600px] rounded-2xl overflow-hidden group order-2 lg:order-1">
-              <img
-                src="https://images.pexels.com/photos/6646939/pexels-photo-6646939.jpeg?auto=compress&cs=tinysrgb&w=1200"
+              <Image
+                src="/images/DSC_0042.webp"
                 alt="Our approach"
-                className="img-cover transform group-hover:scale-105 transition-transform duration-700"
+                fill
+                className="object-cover transform group-hover:scale-105 transition-transform duration-700"
+                sizes="(min-width: 1024px) 50vw, 100vw"
               />
               <div className="absolute inset-0 bg-gradient-to-br from-primary/20 to-transparent" />
             </div>
