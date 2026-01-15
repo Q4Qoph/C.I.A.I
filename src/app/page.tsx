@@ -49,7 +49,7 @@ export default function Home() {
   return (
     <>
       <Hero imageUrl="/images/DSC_0003.webp">
-        <HeroContent className="text-white">
+        <HeroContent className="text-white" variant="up">
           <div className="max-w-3xl space-y-8 relative">
             <div className="absolute inset-0 bg-black/30 rounded-2xl -z-10 blur-xl" />
             <h1 className="text-balance text-white drop-shadow-2xl font-bold">
@@ -70,7 +70,7 @@ export default function Home() {
         </HeroContent>
       </Hero>
 
-      <Section className="bg-gradient-to-br from-orange-50 to-amber-50 py-24 lg:py-32">
+      <Section className="bg-gradient-to-br from-orange-50 to-amber-50 py-24 lg:py-32" animate="up">
         <SectionContent>
           <SectionHeader
             subtitle="What We Do"
@@ -86,7 +86,7 @@ export default function Home() {
         </SectionContent>
       </Section>
 
-      <Section className="relative py-24 lg:py-32 overflow-hidden">
+      <Section className="relative py-24 lg:py-32 overflow-hidden" animate="left">
         <div className="absolute inset-0 bg-gradient-to-br from-primary/10 via-accent/10 to-orange-100/20" />
         <SectionContent className="relative">
           <div className="grid lg:grid-cols-2 gap-12 lg:gap-16 items-center">
@@ -135,7 +135,7 @@ export default function Home() {
         </SectionContent>
       </Section>
 
-      <Section className="bg-white py-24 lg:py-32">
+      <Section className="bg-white py-24 lg:py-32" animate="right">
         <SectionContent>
           <div className="grid lg:grid-cols-2 gap-12 lg:gap-16 items-center">
             <div className="order-2 lg:order-1">
@@ -165,7 +165,7 @@ export default function Home() {
         </SectionContent>
       </Section>
 
-      <Section className="bg-white py-24 lg:py-32">
+      <Section className="bg-white py-24 lg:py-32" animate="up">
         <SectionContent>
           <SectionHeader
             subtitle="Impact & Accountability"
@@ -202,7 +202,7 @@ export default function Home() {
         </SectionContent>
       </Section>
 
-      <Section className="bg-gradient-to-br from-orange-50 to-amber-50 py-32 lg:py-40">
+      <Section className="bg-gradient-to-br from-orange-50 to-amber-50 py-32 lg:py-40" animate="right">
         <SectionContent>
           <div className="text-center max-w-3xl mx-auto space-y-8">
             <h2 className="text-balance">Join Us in Making a Difference</h2>

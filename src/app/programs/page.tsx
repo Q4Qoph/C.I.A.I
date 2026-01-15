@@ -47,7 +47,7 @@ export default function ProgramsPage() {
   return (
     <>
       <Hero>
-        <HeroContent>
+        <HeroContent variant="up">
           <div className="grid lg:grid-cols-2 gap-12 lg:gap-16">
             <div className="flex flex-col">
               <h1 className="text-balance leading-tight">Our<br />Programs</h1>
@@ -61,7 +61,7 @@ export default function ProgramsPage() {
         </HeroContent>
       </Hero>
 
-      <Section className="py-24 lg:py-32">
+      <Section className="py-24 lg:py-32" animate="up">
         <SectionContent>
           <SectionHeader
             subtitle="Thematic Areas"
@@ -76,7 +76,7 @@ export default function ProgramsPage() {
         </SectionContent>
       </Section>
 
-      <Section className="bg-muted py-24 lg:py-32">
+      <Section className="bg-muted py-24 lg:py-32" animate="left">
         <SectionContent>
           <div className="grid lg:grid-cols-2 gap-12 lg:gap-16 items-center">
             <div className="relative h-[400px] lg:h-[600px] rounded-2xl overflow-hidden group order-2 lg:order-1">

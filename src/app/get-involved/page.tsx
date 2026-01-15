@@ -37,7 +37,7 @@ export default function GetInvolvedPage() {
   return (
     <>
       <Hero>
-        <HeroContent>
+        <HeroContent variant="up">
           <div className="grid lg:grid-cols-2 gap-12 lg:gap-16">
             <div className="flex flex-col">
               <h1 className="text-balance leading-tight">Get<br />Involved</h1>
@@ -51,7 +51,7 @@ export default function GetInvolvedPage() {
         </HeroContent>
       </Hero>
 
-      <Section className="py-24 lg:py-32">
+      <Section className="py-24 lg:py-32" animate="up">
         <SectionContent>
           <SectionHeader
             subtitle="Join Us"
@@ -83,7 +83,7 @@ export default function GetInvolvedPage() {
         </SectionContent>
       </Section>
 
-      <Section className="bg-muted py-24 lg:py-32">
+      <Section className="bg-muted py-24 lg:py-32" animate="left">
         <SectionContent>
           <div className="grid lg:grid-cols-2 gap-12 lg:gap-16 items-center">
             <div className="relative h-[400px] lg:h-[600px] rounded-2xl overflow-hidden group order-2 lg:order-1">
@@ -107,7 +107,7 @@ export default function GetInvolvedPage() {
         </SectionContent>
       </Section>
 
-      <Section className="py-24 lg:py-32">
+      <Section className="py-24 lg:py-32" animate="right">
         <SectionContent>
           <div className="grid lg:grid-cols-2 gap-12 lg:gap-16 items-center">
             <div className="order-2 lg:order-1">
@@ -134,7 +134,7 @@ export default function GetInvolvedPage() {
         </SectionContent>
       </Section>
 
-      <Section className="bg-gradient-to-br from-slate-50 to-slate-100 dark:from-slate-900 dark:to-slate-800 py-24 lg:py-32">
+      <Section className="bg-gradient-to-br from-slate-50 to-slate-100 dark:from-slate-900 dark:to-slate-800 py-24 lg:py-32" animate="up">
         <SectionContent>
           <div className="max-w-2xl mx-auto text-center">
             <h2 className="mb-6">Your Support Changes Lives</h2>

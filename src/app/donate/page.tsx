@@ -17,7 +17,7 @@ export default function DonatePage() {
   return (
     <>
       <Hero>
-        <HeroContent>
+        <HeroContent variant="up">
           <div className="grid lg:grid-cols-2 gap-12 lg:gap-16">
             <div className="flex flex-col">
               <h1 className="text-balance leading-tight">Support Our<br />Work</h1>
@@ -31,7 +31,7 @@ export default function DonatePage() {
         </HeroContent>
       </Hero>
 
-      <Section className="py-24 lg:py-32">
+      <Section className="py-24 lg:py-32" animate="left">
         <SectionContent>
           <div className="grid lg:grid-cols-2 gap-12 lg:gap-16 items-center">
             <div className="order-2 lg:order-1">
@@ -72,7 +72,7 @@ export default function DonatePage() {
         </SectionContent>
       </Section>
 
-      <Section className="bg-muted py-24 lg:py-32">
+      <Section className="bg-muted py-24 lg:py-32" animate="up">
         <SectionContent>
           <SectionHeader
             subtitle="Where Your Money Goes"
@@ -91,7 +91,7 @@ export default function DonatePage() {
         </SectionContent>
       </Section>
 
-      <Section className="py-24 lg:py-32">
+      <Section className="py-24 lg:py-32" animate="right">
         <SectionContent>
           <SectionHeader
             subtitle="How to Donate"
@@ -147,7 +147,7 @@ export default function DonatePage() {
         </SectionContent>
       </Section>
 
-      <Section className="bg-gradient-to-br from-slate-50 to-slate-100 dark:from-slate-900 dark:to-slate-800 py-24 lg:py-32">
+      <Section className="bg-gradient-to-br from-slate-50 to-slate-100 dark:from-slate-900 dark:to-slate-800 py-24 lg:py-32" animate="up">
         <SectionContent>
           <div className="max-w-2xl mx-auto text-center">
             <h2 className="mb-4">Donation Accountability</h2>
