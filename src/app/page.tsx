@@ -221,10 +221,10 @@ export default function Home() {
               <Button asChild size="lg" className="bg-primary text-white hover:bg-primary/90 px-8 py-6 text-base font-semibold rounded-lg shadow-sm hover:shadow-md transition-all">
                 <Link href="/donate">Donate Now</Link>
               </Button>
-              <Button asChild size="lg" variant="outline" className="border-2 border-primary/20 bg-white/50 hover:bg-white hover:border-primary text-foreground px-8 py-6 text-base font-semibold rounded-lg shadow-sm hover:shadow-md transition-all">
+              <Button asChild size="lg" variant="outline" className="bg-white/50 hover:bg-white hover:border-primary text-foreground px-8 py-6 text-base font-semibold rounded-lg shadow-sm hover:shadow-md transition-all">
                 <Link href="/get-involved">Get Involved</Link>
               </Button>
-              <Button asChild size="lg" variant="outline" className="border-2 border-primary/20 bg-white/50 hover:bg-white hover:border-primary text-foreground px-8 py-6 text-base font-semibold rounded-lg shadow-sm hover:shadow-md transition-all">
+              <Button asChild size="lg" variant="outline" className="bg-white/50 hover:bg-white hover:border-primary text-foreground px-8 py-6 text-base font-semibold rounded-lg shadow-sm hover:shadow-md transition-all">
                 <Link href="/contact">Partner with Us</Link>
               </Button>
             </div>

@@ -86,7 +86,7 @@ export function Footer() {
                 </ul>
               </div>
             </div>
-            <div className="md:grid md:grid-cols-1 md:gap-8">
+            <div className="md:grid md:grid-cols-2 md:gap-8">
               <div>
                 <h3 className="text-sm font-semibold leading-6 text-foreground">Resources</h3>
                 <ul role="list" className="mt-6 space-y-4">
@@ -99,7 +99,7 @@ export function Footer() {
                   ))}
                 </ul>
               </div>
-              <div className="mt-10">
+              <div>
                 <h3 className="text-sm font-semibold leading-6 text-foreground">Contact</h3>
                 <ul role="list" className="mt-6 space-y-4">
                   <li className="flex items-start gap-2">
