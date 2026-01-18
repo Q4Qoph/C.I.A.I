@@ -1,5 +1,6 @@
 import Link from 'next/link';
 import Image from 'next/image';
+import Logo from '../../public/CIAI-Logo.png';
 import { Facebook, Twitter, Linkedin, Mail, MapPin, Phone } from 'lucide-react';
 
 const navigation = {
@@ -32,7 +33,7 @@ export function Footer() {
             <div>
               <Link href="/" className="inline-block">
                 <Image
-                  src="/CIAI-Logo.png"
+                  src={Logo}
                   alt="CIAI Logo"
                   width={140}
                   height={50}
@@ -85,7 +86,7 @@ export function Footer() {
                 </ul>
               </div>
             </div>
-            <div className="md:grid md:grid-cols-1 md:gap-8">
+            <div className="md:grid md:grid-cols-2 md:gap-8">
               <div>
                 <h3 className="text-sm font-semibold leading-6 text-foreground">Resources</h3>
                 <ul role="list" className="mt-6 space-y-4">
@@ -98,7 +99,7 @@ export function Footer() {
                   ))}
                 </ul>
               </div>
-              <div className="mt-10">
+              <div>
                 <h3 className="text-sm font-semibold leading-6 text-foreground">Contact</h3>
                 <ul role="list" className="mt-6 space-y-4">
                   <li className="flex items-start gap-2">

@@ -1,4 +1,6 @@
 import Image from 'next/image';
+import Img0028 from '../../../public/images/DSC_0028.webp';
+import Img0031 from '../../../public/images/DSC_0031.webp';
 import { Users, Handshake, Heart, Building } from 'lucide-react';
 import { Hero, HeroContent } from '@/components/hero';
 import { Section, SectionContent, SectionHeader } from '@/components/section';
@@ -88,7 +90,7 @@ export default function GetInvolvedPage() {
           <div className="grid lg:grid-cols-2 gap-12 lg:gap-16 items-center">
             <div className="relative h-[400px] lg:h-[600px] rounded-2xl overflow-hidden group order-2 lg:order-1">
               <Image
-                src="/images/DSC_0028.webp"
+                src={Img0028}
                 alt="Youth engagement"
                 fill
                 className="object-cover transform group-hover:scale-105 transition-transform duration-700"
@@ -122,7 +124,7 @@ export default function GetInvolvedPage() {
             </div>
             <div className="relative h-[400px] lg:h-[600px] rounded-2xl overflow-hidden group order-1 lg:order-2">
               <Image
-                src="/images/DSC_0031.webp"
+                src={Img0031}
                 alt="Partnerships"
                 fill
                 className="object-cover transform group-hover:scale-105 transition-transform duration-700"

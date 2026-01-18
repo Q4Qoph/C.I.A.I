@@ -1,4 +1,5 @@
 import Link from 'next/link';
+import Image, { type StaticImageData } from 'next/image';
 import { ArrowRight, LucideIcon } from 'lucide-react';
 
 interface ProgramCardProps {
@@ -6,7 +7,7 @@ interface ProgramCardProps {
   description: string;
   icon: LucideIcon;
   href: string;
-  imageUrl?: string;
+  imageUrl?: string | StaticImageData;
 }
 
 export function ProgramCard({ title, description, icon: Icon, href, imageUrl }: ProgramCardProps) {
@@ -17,10 +18,12 @@ export function ProgramCard({ title, description, icon: Icon, href, imageUrl }: 
     >
       {imageUrl && (
         <div className="aspect-[4/3] overflow-hidden relative">
-          <img
+          <Image
             src={imageUrl}
             alt={title}
-            className="img-cover group-hover:scale-110 transition-transform duration-700"
+            fill
+            className="img-cover group-hover:scale-110 transition-transform duration-700 object-cover"
+            sizes="(min-width: 1024px) 33vw, (min-width: 768px) 50vw, 100vw"
           />
           <div className="absolute bottom-4 left-6">
             <div className="inline-flex h-14 w-14 items-center justify-center rounded-xl bg-muted/50">

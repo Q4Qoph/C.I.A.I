@@ -1,4 +1,5 @@
 import Image from 'next/image';
+import Img0014 from '../../../public/images/DSC_0014.webp';
 import { DollarSign, Shield, Target, TrendingUp } from 'lucide-react';
 import { Hero, HeroContent } from '@/components/hero';
 import { Section, SectionContent, SectionHeader } from '@/components/section';
@@ -43,7 +44,7 @@ export default function DonatePage() {
             </div>
             <div className="relative h-[400px] lg:h-[500px] rounded-2xl overflow-hidden order-1 lg:order-2 group">
               <Image
-                src="/images/DSC_0014.webp"
+                src={Img0014}
                 alt="Impact"
                 fill
                 className="object-cover transform group-hover:scale-105 transition-transform duration-700"
