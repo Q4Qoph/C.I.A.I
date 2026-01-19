@@ -5,7 +5,7 @@ import { useRouter, usePathname } from 'next/navigation';
 import { useAuth } from '@/contexts/auth-context';
 import { AuthProvider } from '@/contexts/auth-context';
 import { Loader2 } from 'lucide-react';
-import { Toaster } from '@/components/ui/toaster';
+import { Toaster } from '@/components/ui/sonner';
 
 function AdminLayoutContent({ children }: { children: React.ReactNode }) {
   const { isAuthenticated, loading } = useAuth();
@@ -33,7 +33,7 @@ function AdminLayoutContent({ children }: { children: React.ReactNode }) {
   return (
     <>
       {children}
-      <Toaster />
+      <Toaster position="top-right" />
     </>
   );
 }
